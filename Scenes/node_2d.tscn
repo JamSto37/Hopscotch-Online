@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7aimmlmcstkn"]
+
+[ext_resource type="Texture2D" uid="uid://c7wnw812x6bey" path="res://Textures/icon.svg" id="1_j2wod"]
+[ext_resource type="Script" uid="uid://umegjhtyvi3r" path="res://Scenes/movement.gd" id="2_v1qfn"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_j2wod")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(946, 698)
+texture = ExtResource("1_j2wod")
+script = ExtResource("2_v1qfn")

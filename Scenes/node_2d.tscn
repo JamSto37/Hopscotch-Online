@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7aimmlmcstkn"]
+[gd_scene load_steps=5 format=3 uid="uid://b7aimmlmcstkn"]
 
 [ext_resource type="Texture2D" uid="uid://c7wnw812x6bey" path="res://Textures/icon.svg" id="1_j2wod"]
+[ext_resource type="Texture2D" uid="uid://b2t4vxn6vh268" path="res://Textures/1800-0575-049-104in-Hopscotch-Playground-Stencil-104x46-1.jpg" id="2_hh5uf"]
 [ext_resource type="Script" uid="uid://umegjhtyvi3r" path="res://Scenes/movement.gd" id="2_v1qfn"]
+[ext_resource type="Texture2D" uid="uid://c17n0k18w7o7t" path="res://Textures/player_north.png" id="3_6whob"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,7 +12,15 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_j2wod")
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 724.0
+offset_top = 118.0
+offset_right = 2224.0
+offset_bottom = 2643.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_hh5uf")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(946, 698)
-texture = ExtResource("1_j2wod")
+position = Vector2(955, 854)
+texture = ExtResource("3_6whob")
 script = ExtResource("2_v1qfn")
